@@ -2,7 +2,7 @@ Summary:	Wayland protocol files
 Summary(pl.UTF-8):	Pliki protokołu Wayland
 Name:		wayland-protocols
 Version:	1.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
@@ -32,6 +32,10 @@ z wayland-protocols.
 
 %build
 %configure \
+%if "%{_gnu}" != "-gnux32"
+	--host=%{_host} \
+	--build=%{_host} \
+%endif
 	--disable-silent-rules
 
 %{__make}
