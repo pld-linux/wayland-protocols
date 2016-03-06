@@ -10,6 +10,7 @@ Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
 URL:		https://wayland.freedesktop.org/
 BuildRequires:	pkgconfig
 BuildRequires:	wayland-devel
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
