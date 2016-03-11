@@ -1,12 +1,12 @@
 Summary:	Wayland protocol files
 Summary(pl.UTF-8):	Pliki protokołu Wayland
 Name:		wayland-protocols
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	53b271af0d0727e265a4191400d413ad
+# Source0-md5:	88b5e3dce52908c7e74fad3e2cf8abb0
 URL:		https://wayland.freedesktop.org/
 BuildRequires:	pkgconfig
 BuildRequires:	wayland-devel
