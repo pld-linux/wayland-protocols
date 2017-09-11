@@ -1,12 +1,12 @@
 Summary:	Wayland protocol files
 Summary(pl.UTF-8):	Pliki protokołu Wayland
 Name:		wayland-protocols
-Version:	1.7
+Version:	1.10
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	9acfc9556f7cfedc44d97af60da66a5f
+# Source0-md5:	84a7846c2b6a6a3e265fc9be36453e60
 URL:		https://wayland.freedesktop.org/
 BuildRequires:	pkgconfig
 BuildRequires:	wayland-devel
