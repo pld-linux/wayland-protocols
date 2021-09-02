@@ -10,7 +10,9 @@ Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
 # Source0-md5:	05aac9a9a9447225769f993cf673c5bd
 URL:		https://wayland.freedesktop.org/
 BuildRequires:	pkgconfig
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	wayland-devel
+BuildRequires:	xz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
