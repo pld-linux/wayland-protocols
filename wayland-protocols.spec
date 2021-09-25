@@ -1,15 +1,18 @@
 Summary:	Wayland protocol files
 Summary(pl.UTF-8):	Pliki protokołu Wayland
 Name:		wayland-protocols
-Version:	1.22
+Version:	1.23
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://wayland.freedesktop.org/releases.html
 Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	05aac9a9a9447225769f993cf673c5bd
+# Source0-md5:	31a6c469718db37d2688109e548506e4
 URL:		https://wayland.freedesktop.org/
+BuildRequires:	meson >= 0.54.0
+BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	wayland-devel
 BuildRequires:	xz
@@ -34,20 +37,14 @@ z wayland-protocols.
 %setup -q
 
 %build
-%configure \
-%if "%{_gnu}" != "-gnux32"
-	--host=%{_host} \
-	--build=%{_host} \
-%endif
-	--disable-silent-rules
+%meson build
 
-%{__make}
+%ninja_build -C build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+%ninja_install -C build
 
 %clean
 rm -rf $RPM_BUILD_ROOT
