@@ -1,20 +1,20 @@
 Summary:	Wayland protocol files
 Summary(pl.UTF-8):	Pliki protokołu Wayland
 Name:		wayland-protocols
-Version:	1.25
+Version:	1.26
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://wayland.freedesktop.org/releases.html
 Source0:	https://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	0c192bf32de09ec30de4a82d1c65329c
+# Source0-md5:	0c6b3e037f3881650d9a53610dd235c7
 URL:		https://wayland.freedesktop.org/
-BuildRequires:	meson >= 0.54.0
+BuildRequires:	meson >= 0.55.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	wayland-devel
+BuildRequires:	wayland-devel >= 1.20.0
 BuildRequires:	xz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
