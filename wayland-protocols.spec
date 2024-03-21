@@ -1,13 +1,13 @@
 Summary:	Wayland protocol files
 Summary(pl.UTF-8):	Pliki protokołu Wayland
 Name:		wayland-protocols
-Version:	1.33
+Version:	1.34
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://wayland.freedesktop.org/releases.html
 Source0:	https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/%{version}/downloads/%{name}-%{version}.tar.xz
-# Source0-md5:	6af4d3a18fbfc7d8aa3f9ccf5b4743f3
+# Source0-md5:	512393249240369ad70a17dd0f98edaa
 URL:		https://wayland.freedesktop.org/
 BuildRequires:	meson >= 0.55.0
 BuildRequires:	ninja >= 1.5
