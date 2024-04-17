@@ -9,6 +9,7 @@ Group:		Libraries
 Source0:	https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/%{version}/downloads/%{name}-%{version}.tar.xz
 # Source0-md5:	512393249240369ad70a17dd0f98edaa
 URL:		https://wayland.freedesktop.org/
+BuildRequires:	libstdc++-devel
 BuildRequires:	meson >= 0.55.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
