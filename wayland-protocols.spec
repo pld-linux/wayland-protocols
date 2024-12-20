@@ -1,13 +1,13 @@
 Summary:	Wayland protocol files
 Summary(pl.UTF-8):	Pliki protokołu Wayland
 Name:		wayland-protocols
-Version:	1.38
+Version:	1.39
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://wayland.freedesktop.org/releases.html
 Source0:	https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/%{version}/downloads/%{name}-%{version}.tar.xz
-# Source0-md5:	6bc5904062daada976e8bd44dd4d2b00
+# Source0-md5:	da3098ba86d62715125292e91d77202b
 URL:		https://wayland.freedesktop.org/
 BuildRequires:	libstdc++-devel
 BuildRequires:	meson >= 0.58.0
@@ -15,7 +15,7 @@ BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	wayland-devel >= 1.22.90
+BuildRequires:	wayland-devel >= 1.23.0
 BuildRequires:	xz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
